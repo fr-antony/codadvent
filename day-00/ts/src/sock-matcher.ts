@@ -15,7 +15,7 @@ export class SockMatcher {
     private static readonly WARMTH_WEIGHT = 15;
     private static readonly WARMTH_PENALTY_PER_POINT = 3;
     private static readonly MATCH_BONUS = 5;
-    private static readonly PERFECT_MATCH_SCORE = 100;
+    private static readonly PERFECT_MATCH_SCORE = 105;
 
     public static isPair(a: Sock, b: Sock): boolean {
         return SockMatcher.computeCompatibilityScore(a, b) === SockMatcher.PERFECT_MATCH_SCORE;
@@ -36,9 +36,9 @@ export class SockMatcher {
         score += Math.max(0, SockMatcher.SIZE_WEIGHT - Math.abs(a.size - b.size) * SockMatcher.SIZE_PENALTY_PER_POINT);
         score += Math.max(0, SockMatcher.WARMTH_WEIGHT - Math.abs(a.warmth - b.warmth) * SockMatcher.WARMTH_PENALTY_PER_POINT);
 
-        // if (samePattern && sameColor && sameMaterial && sameSize && sameWarmth) {
-        //     score += SockMatcher.MATCH_BONUS;
-        // }
+        if (samePattern && sameColor && sameMaterial && sameSize && sameWarmth) {
+            score += SockMatcher.MATCH_BONUS;
+        }
 
         return score;
     }
