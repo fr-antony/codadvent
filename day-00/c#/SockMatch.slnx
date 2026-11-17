@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SockMatch.Tests/SockMatch.Tests.csproj" />
+  <Project Path="SockMatch/SockMatch.csproj" />
+</Solution>

@@ -1,0 +1,219 @@
+# =============================================================
+# .gitignore : C# / Java / PHP / TypeScript
+# =============================================================
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------- IDE / Éditeurs ----------
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.factorypath
+nbproject/
+
+# ---------- Secrets / Environnement ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# ---------- Logs ----------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =============================================================
+# C# / .NET
+# =============================================================
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+build/
+[Ll]og/
+[Ll]ogs/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+.nuget/
+project.lock.json
+artifacts/
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+.ionide/
+launchSettings.json
+*.publish.xml
+PublishScripts/
+msbuild.log
+msbuild.err
+msbuild.wrn
+BenchmarkDotNet.Artifacts/
+
+# =============================================================
+# Java
+# =============================================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+target/
+out/
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.apt_generated/
+.apt_generated_tests/
+bin/
+*.hprof
+local.properties
+
+# =============================================================
+# PHP
+# =============================================================
+/vendor/
+composer.phar
+.phpunit.result.cache
+.phpunit.cache/
+phpunit.xml
+.php-cs-fixer.cache
+.php_cs.cache
+.phpcs-cache
+.phpstan.cache
+.php_cs
+.phpactor.json
+
+# Laravel
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*
+/public/hot
+/public/storage
+/public/build
+Homestead.json
+Homestead.yaml
+auth.json
+
+# Symfony
+/var/
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+
+# WordPress (si besoin)
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+
+# =============================================================
+# TypeScript / Node
+# =============================================================
+node_modules/
+jspm_packages/
+bower_components/
+dist/
+*.tsbuildinfo
+.tscache/
+.eslintcache
+.stylelintcache
+.npm/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+.pnpm-store/
+.node_repl_history
+*.tgz
+
+# Frameworks front
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+.angular/
+.turbo/
+.parcel-cache/
+.cache/
+.vite/
+.docusaurus/
+storybook-static/
+
+# Tests / couverture
+coverage/
+.nyc_output/
+lib-cov/
+*.lcov
+junit.xml
+
+# Divers
+.temp/
+.tmp/
+tmp/
+temp/
